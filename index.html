@@ -13,12 +13,15 @@
         body {
             overflow-x: hidden;
             font-family: Tungsten-Bold, "Riot Sans", sans-serif;
+            position: relative;
+            background-color: white;
         }
     </style>
 </head>
 
 <body>
-    <div class="bg-black py-5 px-12 font-bold text-sm flex items-center justify-around">
+    <div
+        class="bg-black border-2 border-yellow-600 py-5 px-12 font-bold text-sm flex items-center justify-around fixed w-full top-0 z-1">
         <div class="flex items-center gap-8">
             <div class="flex items-center">
                 <svg width="85" height="27" fill="white" class="_4QbmucHkCfNI1ob1rB2Twg==" viewBox="0 0 587.93 165">
@@ -105,13 +108,15 @@
                 </svg>
             </div>
 
-            <div class="flex items-center gap-2">
-                <p class="text-white">MORE</p>
-                <svg width="10" height="5" class="Keqbnicv6fO1CTrVF-g5Rg== Z-Mbz2de33EBshUmlYmWVQ==" viewBox="0 0 8 5">
+            <div
+                class="flex text-white items-center gap-2 group hover:py-1 hover:px-4 hover:underline rounded-lg hover:decoration-red-500 underline-offset-25 decoration-2 hover:bg-zinc-600 hover:text-red-500 hover:border-b-2">
+                <p>MORE</p>
+                <svg class="fill-gray-500 group-hover:fill-white" width="10" height="5"
+                    class="Keqbnicv6fO1CTrVF-g5Rg== Z-Mbz2de33EBshUmlYmWVQ==" viewBox="0 0 8 5">
                     <title>mainNavArrowDown</title>
                     <path
-                        d="m.707 1.707 2.586 2.586a1 1 0 0 0 1.414 0l2.586-2.586C7.923 1.077 7.477 0 6.586 0H1.414C.524 0 .077 1.077.707 1.707Z"
-                        fill="#7E7E7E"></path>
+                        d="m.707 1.707 2.586 2.586a1 1 0 0 0 1.414 0l2.586-2.586C7.923 1.077 7.477 0 6.586 0H1.414C.524 0 .077 1.077.707 1.707Z">
+                    </path>
                 </svg>
             </div>
         </div>
@@ -132,9 +137,96 @@
                     fill="#E8E8E8"></path>
             </svg>
 
-            <button class="bg-gradient-to-r from-red-600 to-red-400 rounded-xl py-2 px-4 font-semibold text-xs">PLAY NOW</button>
+            <button class="bg-gradient-to-r from-red-600 to-red-400 rounded-xl py-2 px-4 font-semibold text-xs">PLAY
+                NOW</button>
         </div>
     </div>
+
+    <div class="relative">
+
+        <video class="w-full h-auto inset-1 opacity-80" autoplay loop muted jm_neat="987464705">
+            <source data-testid="source-video/mp4"
+                src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/409ab2fc369ba5e1fe50bac10c6676d7d1365a9f.mp4?accountingTag=VAL"
+                type="video/mp4">
+        </video>
+
+        <div class="absolute m-auto text-center text-white lg:translate-x-100 -translate-y-150 space-y-3">
+
+            <img class="m-auto" src="./assets/video.avif" alt="">
+
+            <h1 class="text-white font-extrabold text-lg mt-6 ">VALORANT — A 5v5 tactical shooter featuring agents with
+                unique
+                abilities
+            </h1>
+
+            <button
+                class="bg-red-500 outline-2 outline-offset-2 text-white p-6 text-xl mt-8  hover:text-black hover:bg-white hover:outline-white">PLAY
+                FOR
+                FREE</button>
+
+
+        </div>
+    </div>
+
+    <div class="bg-pink-100 px-15 pt-10 w-full">
+
+        <div class="flex items-center justify-between mb-5">
+            <h2 class="font-bold text-2xl">THE LATEST</h2>
+            <p>GO TO NEWS PAGE</p>
+        </div>
+
+        <div class="flex justify-end gap-8">
+
+            <div class="w-10/12">
+                <div>
+                    <img class="h-60 w-full" src="./assets/latest1.avif" alt="">
+                </div>
+
+                <div class="">
+                    <p class="my-3"><span class="text-red-600">GAME UPDATES</span> | 20/01/2026</p>
+
+                    <p class="mb-2">VALORANT Patch Notes 12.01</p>
+                    <p>MFA coming to EU, Esports hub is back for VCT26</p>
+                </div>
+            </div>
+
+            <div class="w-10/12">
+                <div>
+                    <img class="h-60 w-full" src="./assets/latest2.avif" alt="">
+                </div>
+
+                <div class="">
+                    <p class="my-3"><span class="text-red-600">ESPORT</span> | 20/01/2026</p>
+
+                    <p class="mb-2">Movember partners with VALORANT Esports EMEA</p>
+                    <p>New multi-year partnership to bring mental health support and resources to players and fanns.</p>
+                </div>
+            </div>
+
+            <div class="w-10/12">
+                <div>
+                    <img class="h-60 w-full" src="./assets/latest3.avif" alt="">
+                </div>
+
+                <div class="">
+                    <p class="my-3"><span class="text-red-600">ESPORT</span> | 15/01/2026</p>
+
+                    <p class="mb-2">Razer signs multiyear partnership with VALORANT Esports EMEA.</p>
+                    <p>Razer will be Official Gaming Chair Partner for VCT EMEA and Game Changers EMEA.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative">
+        <img  src="./assets/con3.jpg" alt="">
+        <div class="absolute translate-x-10 -translate-y-60 w-1/2">
+            <h2 class="font-extrabold text-4xl">SEASON 26 ACT I START NOW</h2>
+            <p>discover a new gun, new game mode, skins, map updates, and lot more</p>
+            <button class="bg-red-500 text-white px-3 py-2 hover:bg-slate-950 mt-5">WATCH NOW</button>
+        </div>
+    </div>
+
 </body>
 
 </html>
